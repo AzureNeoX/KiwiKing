@@ -1,24 +1,29 @@
-local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
-local window = DrRayLibrary:Load("KiwiKing", "Default")
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 
-local tab = DrRayLibrary.newTab("Menu", "ImageIdHere")
+local PhantomForcesWindow = Library:NewWindow("KiwiKing")
 
-tab.newButton("Fly Player", "Prints Hello!", function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/HKPm33Pq'))()
+local KillingCheats = PhantomForcesWindow:NewSection("Menu")
+
+KillingCheats:CreateButton("Fly Player", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/HKPm33Pq'))()
 end)
 
-tab.newButton("AutoPlay Player", "Prints Hello!", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/AzureNeoX/Autoplay/refs/heads/main/Q",true))()
+KillingCheats:CreateButton("f3x", function()
+loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
 end)
 
-tab.newButton("Teleport Tool Player", "Prints Hello!", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/AzureNeoX/Teleport-Tool/refs/heads/main/Q", true))()
+KillingCheats:CreateButton("AutoPlay Player", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AzureNeoX/Autoplay/refs/heads/main/Q",true))()
 end)
 
-tab.newButton("Sigma Spy", "Prints Hello!", function()
+KillingCheats:CreateButton("Teleport Tool Player", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AzureNeoX/Teleport-Tool/refs/heads/main/Q", true))()
+end)
+
+KillingCheats:CreateButton("Sigma Spy", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/depthso/Sigma-Spy/refs/heads/main/Main.lua"))()
 end)
 
-tab.newButton("Simple Spy Mobile", "Prints Hello!", function()
+KillingCheats:CreateButton("Simple Spy Mobile", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/wfrefdewwss/Discord-Custom-Status-24-7/refs/heads/main/requirements.txt"))()
 end)
